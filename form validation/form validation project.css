@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form{
+    width: 40%;
+    height: 30%;
+    margin: 20px auto;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: aqua;
+}
+h1{
+    color:royalblue;
+    text-align: center;
+    
+}
+ 
+ .for{
+     /* margin: 10px; */
+     padding: 5px;
+    }
+input{
+    padding:10px 158px;
+    margin: 5px;
+    
+    overflow: auto;
+} 
+.bt1{
+    color:red;
+    font-size: large;
+    background-color: black;
+    padding: 10px 6px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* @media (max-width: 300px) and (max-width:900px){
+
+}
+  */

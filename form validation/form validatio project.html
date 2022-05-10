@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form validation project.css">
+</head>
+<body> <div class="form">    
+    <h1> validation form</h1>
+    <form class="for"  name="validationform" onsubmit="return  validate()">
+
+    <tr>
+       F Name: <td> <input type="text" name="uname" required placeholder="Enter Your F name"></td>
+    </tr>
+
+    <tr>
+       L Name: <td> <input type="text" name="uname1" required placeholder="Enter Your L name"></td>
+    </tr>
+
+
+    <tr>
+        Email: <td> <input type="email" name="uemail" required placeholder="Enter Your Email"></td>
+    </tr>
+
+    <tr>
+        Phone: <td> <input type="phone" name="number"  placeholder="Enter Your Nhone"></td>
+    </tr>
+
+
+    <tr>
+        Password:<td> <input type="password" name="upass" placeholder="Enter Your Pass"></td>
+    </tr>
+
+    
+    <tr>
+       Re-Password:<td> <input type="password" name="upass1" placeholder="Enter Your Re-Pass"></td>
+    </tr>
+
+
+
+    <tr>
+        Male:<td> <input type="radio" name="gender" required placeholder="Enter Your Gender"></td>
+    </tr>
+
+    <tr>
+        Female:<td> <input type="radio" name="gender" required placeholder="Enter Your Gender"></td>
+    </tr>
+
+    <tr>
+        Other:<td> <input type="radio" name="gender" required placeholder="Enter Your Gender"></td>
+    </tr>
+
+
+    <tr>
+        <td> <input class="bt1" type="submit" value="submit"></td>
+    </tr>
+
+    <tr>
+        <td> <input class="bt1" type="reset" value="reset"></td>
+    </tr>
+
+
+
+   
+   
+    
+    </form>
+</div>
+
+</body>
+<script>
+    function validate(){
+        var pas=document.validationform.upass.value;
+        var pas1=document.validationform.upass1.value;
+        var num= document.validationform.number.value;
+        if(pas==pas1){
+            return true;
+        }
+        else{
+            alert("password must be same")
+            return false;
+        }
+     
+    }
+</script>
+</html>
